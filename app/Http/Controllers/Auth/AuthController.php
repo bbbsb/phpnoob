@@ -24,6 +24,7 @@ class AuthController extends Controller
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     protected $redirectPath = '/profile';
+    protected $username = 'name';
 
     /**
      * Create a new authentication controller instance.

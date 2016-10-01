@@ -1,7 +1,10 @@
 <form action="/auth/login" method="post">
-    {{csrf_field()}}
+    {{csrf_field()}}{{--
     <div>
         邮箱:<input type="email" name="email" id="" value="{{old('email')}}">
+    </div>--}}
+    <div>
+        username: <input type="text" name="name" id="" value="{{old('name')}}">
     </div>
     <div>
         密码:<input type="password" name="password" id="password">

@@ -24,7 +24,17 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::get('profile', 'UserController@profile');
 
+Route::get('/user/{name?}', function($name = 'default'){
+    return 'Hello '.$name;
+});
 
+Route::get('test1', ['as' => 't',function(){
+    return 'test1';
+}]);
+
+Route::get('/nickname', function(){
+    return redirect()->route('t');
+});
 
 Route::get('/testPost', function(){
     $csrf_token = csrf_token();
@@ -35,10 +45,12 @@ Route::get('/testPost', function(){
     </from>
 ABCD;
 });
+Route::get('/hello/{name?}',function($name = '123'){
+    return "Hello {$name}!";
+})->where('name', '[a-z]+'); //default value has no effective
 
-Route::post('/hello', function(){
-    return "hello laravel[POST]!";
-});
+Route::resource('post', 'PostController');
+
 
 
 
