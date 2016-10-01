@@ -20,7 +20,8 @@ class PostController extends Controller
     {
         $posts = Cache::get('posts', []);
         if(!$posts) exit('not article');
-        $html = '<ul>';
+        $html  = '<a href="'.route('post.create').'">add article</a>';
+        $html .= '<ul>';
         foreach($posts as $k => $v) {
             $html .= "<li><a href='".route('post.show', ['post' => $k])."'>{$v['title']}</a></li>";
         }
@@ -91,12 +92,15 @@ ABCD;
         if(!$posts || !$posts[$id]) exit('no article');
         $post = $posts[$id];
         $editUrl = route('post.edit', ['post' => $id]);
+        $delUrl = route('post.delete', ['post' => $id]);
         $html = <<<ABCD
 <h2>{$post['title']}</h2>
 <br/>
 <h3>{$post['content']}</h3>
 <br/>
 <a href="{$editUrl}">edit</a>
+<br/>
+<a href="{$delUrl}">delete</a>
 ABCD;
 
         return $html;
@@ -157,6 +161,7 @@ ABCD;
     public function destroy($id)
     {
         $posts = Cache::get('posts', []);
+        dd($posts);
         if(!$posts || !$posts[$id]) exit('not article');
         unset($posts[$id]);
         Cache::put('posts', $posts, 60);

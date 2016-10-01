@@ -51,6 +51,11 @@ Route::get('/hello/{name?}',function($name = '123'){
 
 Route::resource('post', 'PostController');
 
+Route::controller('request', 'RequestController');
+
+Route::get('fileUpload', 'FileController@index');
+Route::post('fileUpload', 'FileController@upload');
+
 
 
 
