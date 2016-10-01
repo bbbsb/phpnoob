@@ -15,4 +15,11 @@
     <div>
         <button type="submit">注册</button>
     </div>
+    @if(count($errors) > 0)
+        <ul>
+            @foreach($errors->all() as $error)
+                <i>{{$error}}</i>
+            @endforeach
+        </ul>
+    @endif
 </form>

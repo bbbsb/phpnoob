@@ -18,6 +18,7 @@ class UserController extends Controller
     public function profile(Request $request)
     {
         $user = $request->user();
+        //dd($request);
         echo $user['name'].'登录成功!';
     }
 
