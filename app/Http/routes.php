@@ -24,7 +24,7 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 Route::get('profile', 'UserController@profile');
 
-Route::get('/user/{name?}', function($name = 'default'){
+Route::get('/user23/{name?}', function($name = 'default'){
     return 'Hello '.$name;
 });
 
@@ -55,6 +55,20 @@ Route::controller('request', 'RequestController');
 
 Route::get('fileUpload', 'FileController@index');
 Route::post('fileUpload', 'FileController@upload');
+
+Route::get('user/response', function(){
+    //return (new \Illuminate\Http\Response('Hello World', 200))->header('Content-Type', 'text/html;charset=gb2312');
+    return response('Hello Baby', 400)
+        ->header('content-type', 'text/html;charset=gbk')
+        ->withCookie('web-sites', 'www.phpnoob.com');
+});
+
+Route::get('user/download', function(){
+    return response()->download(realpath(public_path('images').'/asp.png'), 'my.png');
+});
+
+Route::get('user/test', 'UserController@test');
+Route::get('user/tt', 'UserController@lara');
 
 
 

@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use DB;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        DB::listen(function($sql, $bindings, $time){
+            echo 'sql: '.$sql.' values '.json_encode($bindings). ' time: '.$time.'ms';
+        });
     }
 
     /**
