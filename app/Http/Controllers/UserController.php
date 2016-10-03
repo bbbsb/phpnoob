@@ -14,33 +14,23 @@ class UserController extends Controller
 
     public function __construct()
     {
-        //$this->middleware('auth');
+        $this->middleware('auth');
     }
 
-    public function profile(Request $request)
+    public function index(Request $request)
     {
         $user = $request->user();
-        //dd($request);
         echo $user['name'].'登录成功!';
     }
 
-    public function test()
+    public function createArticle()
     {
-        DB::insert('insert into users (name, email, password) values (?, ?, ?)',[
-            'fang',
-            'ba221o@1baow1w23.com',
-            '123'
-        ]);
-        $users = DB::select('select * from users where ?',[
-            '1'
-        ]);
-        dd($users);
+        return view('user.article');
     }
 
-    public function lara()
+    public function handleCreateArticle(Request $request)
     {
-       // = new User();
-        dd(User::popular()->get());
+        return 456;
     }
 
 

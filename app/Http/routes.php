@@ -15,46 +15,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get( 'auth/login', 'Auth\AuthController@getLogin');
-Route::post('auth/login', 'Auth\AuthController@postLogin');
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
+//login && logout
+Route::get('user/login', 'Auth\AuthController@getLogin');
+Route::post('user/login', 'Auth\AuthController@postLogin');
+Route::get('user/logout', 'Auth\AuthController@getLogout');
 
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
+//register
+Route::get('user/register', 'Auth\AuthController@getRegister');
+Route::post('user/register', 'Auth\AuthController@postRegister');
 
-Route::get('profile', 'UserController@profile');
+//home page
+Route::get('user', 'UserController@index');
+Route::get('user/index', 'UserController@index');
 
-Route::get('/user23/{name?}', function($name = 'default'){
-    return 'Hello '.$name;
-});
+Route::get('user/createArticle', 'UserController@createArticle');
+Route::post('user/createArticle', 'UserController@handleCreateArticle');
 
-Route::get('test1', ['as' => 't',function(){
-    return 'test1';
-}]);
 
-Route::get('/nickname', function(){
-    return redirect()->route('t');
-});
 
-Route::get('/testPost', function(){
-    $csrf_token = csrf_token();
-    return <<<ABCD
-    <form action="/hello" method="post">
-        <input type="hidden" name="_token" value="{$csrf_token}">
-        <input type="submit" value="test">
-    </from>
-ABCD;
-});
-Route::get('/hello/{name?}',function($name = '123'){
-    return "Hello {$name}!";
-})->where('name', '[a-z]+'); //default value has no effective
 
-Route::resource('post', 'PostController');
-
-Route::controller('request', 'RequestController');
-
-Route::get('fileUpload', 'FileController@index');
-Route::post('fileUpload', 'FileController@upload');
 
 Route::get('user/response', function(){
     //return (new \Illuminate\Http\Response('Hello World', 200))->header('Content-Type', 'text/html;charset=gb2312');
