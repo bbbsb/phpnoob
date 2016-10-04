@@ -29,8 +29,11 @@ Route::get('user', 'UserController@index');
 Route::get('user/index', 'UserController@index');
 
 Route::get('user/createArticle', 'UserController@createArticle');
-Route::post('user/createArticle', 'UserController@handleCreateArticle');
+Route::post('user/handleCreateArticle', 'UserController@handleCreateArticle');
+Route::get('user/allArticle', 'UserController@allArticle');
 
+
+Route::get('show/{id}', 'ArticleController@show');
 
 
 

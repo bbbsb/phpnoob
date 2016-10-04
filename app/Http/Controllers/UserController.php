@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -25,12 +26,48 @@ class UserController extends Controller
 
     public function createArticle()
     {
-        return view('user.article');
+        return view('user.createArticle');
     }
 
     public function handleCreateArticle(Request $request)
     {
-        return 456;
+        $tag = $request->get('tag');
+        $tag = trim($tag);
+        $tag = str_replace('/\s+/', ' ', $tag);
+        $post = new Article();
+        $post->tag = $tag;
+        $post->content = trim($request->get('content'));
+        $post->title = trim($request->get('title'));
+        $post->cover = trim($request->get('cover'));
+        $post->uid = $request->user()->id;
+
+        if($post->save()) {
+            return response()->json([
+                'errcode' => 0,
+                'msg' => 'success',
+            ]);
+        } else {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'fail',
+            ]);
+        }
+        //return response()->json($request->all());
+    }
+
+    public function allArticle()
+    {
+        $articles = Article::simplePaginate(2);
+        echo $articles->render();
+        //dd($articles->render());
+        return view('user.article', [
+            'articles' => $articles,
+        ]);
+    }
+
+    public function handleDeleteArticle(Request $request)
+    {
+
     }
 
 

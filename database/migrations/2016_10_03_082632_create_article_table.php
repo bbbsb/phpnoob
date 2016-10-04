@@ -15,10 +15,13 @@ class CreateArticleTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('uid');
-            $table->integer('tag');
+            $table->string('title', 200)->unique();
+            $table->string('tag', 100);
+            $table->integer('type_id');
             $table->text('content');
             $table->string('attachment');
             $table->string('cover');
+            $table->integer('click');
             $table->timestamps();
         });
     }
