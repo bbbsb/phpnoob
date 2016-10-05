@@ -57,9 +57,7 @@ class UserController extends Controller
 
     public function allArticle()
     {
-        $articles = Article::simplePaginate(2);
-        echo $articles->render();
-        //dd($articles->render());
+        $articles = Article::paginate(2);
         return view('user.article', [
             'articles' => $articles,
         ]);

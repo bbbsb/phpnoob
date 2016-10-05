@@ -10,7 +10,6 @@
             {{$article['updated_at']}}
             <br>
         @endforeach
-
         {!! $articles->render() !!}
     @else
         no article
