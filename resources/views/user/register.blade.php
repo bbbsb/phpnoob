@@ -1,4 +1,4 @@
-<form action="/auth/register" method="post">
+<form action="" method="post">
     {{csrf_field()}}
     <div>
         用户名:<input type="text" name="name" id="" value="{{old('name')}}">
