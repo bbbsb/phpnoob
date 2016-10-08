@@ -22,7 +22,15 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::get('/testPost', function(){
+Route::get('password/email', 'Auth\PasswordController@getEmail');
+Route::post('password/email', 'Auth\PasswordController@postEmail');
+
+Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+Route::get('profile', 'UserController@profile');
+
+Route::get('testPost', function(){
     $csrf_token = csrf_token();
     return <<<ABCD
     <form action="/hello" method="post">
@@ -32,7 +40,7 @@ Route::get('/testPost', function(){
 ABCD;
 });
 
-Route::post('/hello', function(){
+Route::post('hello', function(){
     return "hello laravel[POST]!";
 });
 

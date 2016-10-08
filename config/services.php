@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'github' => [
+        'client_id' => 'your github app client_id',
+        'client_secret' => 'your github app client_secret',
+        'redirect' => 'http://www.noob.com/auth/github/callback',
+    ],
 ];
