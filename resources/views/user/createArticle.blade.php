@@ -1,15 +1,26 @@
 @extends('layouts.default')
 @section('body')
     {{csrf_field()}}
-        title: <input type="text" name="title" id="">
-        <br>
-        tag: <input type="text" name="tag" id="">
-        <br>
-        cover: <input type="text" name="cover" id="">
-        <br>
-        content: <textarea name="content" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="add article" id="submit">
+    <div class="form-group">
+        <label class="control-label">input</label>
+        <input class="form-control" type="text" name="title">
+        <span class="help-block"></span>
+    </div>
+    <div class="form-group">
+        <label class="control-label">tag</label>
+        <input class="form-control" type="text" name="tag">
+    </div>
+    <div class="form-group">
+        <label class="control-label">cover</label>
+        <input class="form-control" type="text" name="cover">
+    </div>
+    <div class="form-group">
+        <label class="control-label">content</label>
+        <textarea class="form-control" name="content" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" disabled>add article</button>
+    </div>
 @endsection
 @section('after-body')
     <script>
