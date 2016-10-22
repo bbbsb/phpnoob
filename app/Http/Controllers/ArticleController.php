@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -48,7 +49,8 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        dd(1);
+        $article = Article::find($id);
+        return view('article.index')->with('article', $article);
     }
 
     /**

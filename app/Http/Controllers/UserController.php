@@ -20,8 +20,7 @@ class UserController extends Controller
 
     public function index(Request $request)
     {
-        $user = $request->user();
-        echo $user['name'].'登录成功!';
+        return view('user.index');
     }
 
     public function createArticle()

@@ -2,24 +2,24 @@
 @section('body')
     {{csrf_field()}}
     <div class="form-group">
-        <label class="control-label">input</label>
-        <input class="form-control" type="text" name="title">
+        <label for="title" class="control-label">title</label>
+        <input class="form-control" type="text" name="title" id="title" required>
         <span class="help-block"></span>
     </div>
     <div class="form-group">
-        <label class="control-label">tag</label>
-        <input class="form-control" type="text" name="tag">
+        <label for="tag" class="control-label">tag</label>
+        <input class="form-control" type="text" name="tag" id="tag">
     </div>
     <div class="form-group">
-        <label class="control-label">cover</label>
-        <input class="form-control" type="text" name="cover">
+        <label for="cover" class="control-label">cover</label>
+        <input class="form-control" type="text" name="cover" id="cover">
     </div>
     <div class="form-group">
-        <label class="control-label">content</label>
-        <textarea class="form-control" name="content" id="" cols="30" rows="10"></textarea>
+        <label for="content" class="control-label">content</label>
+        <textarea class="form-control" name="content" id="content" cols="30" rows="10"></textarea>
     </div>
     <div class="form-group">
-        <button class="btn btn-primary" disabled>add article</button>
+        <button class="btn btn-primary" id="submit">add article</button>
     </div>
 @endsection
 @section('after-body')
