@@ -59,8 +59,13 @@ Route::get('user/createArticle', 'UserController@createArticle');
 Route::post('user/handleCreateArticle', 'UserController@handleCreateArticle');
 Route::get('user/allArticle', 'UserController@allArticle');
 
-
 Route::get('show/{id}', 'ArticleController@show');
+
+//category
+Route::get('user/allCategory', 'UserController@allCategory');
+Route::get('user/createCategory', 'UserController@createCategory');
+Route::post('user/createCategory', 'UserController@handleCreateCategory');
+
 
 Route::get('user/response', function(){
     //return (new \Illuminate\Http\Response('Hello World', 200))->header('Content-Type', 'text/html;charset=gb2312');

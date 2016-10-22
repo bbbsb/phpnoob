@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -67,5 +68,22 @@ class UserController extends Controller
 
     }
 
+    public function createCategory()
+    {
+        return view('category.create');
+    }
 
+    public function handleCreateCategory(Request $request)
+    {
+        $data['pid'] = $request->get('pid');
+        $data['name'] = $request->get('name');
+        dd(Category::create($data));
+    }
+
+    public function allCategory()
+    {
+        $categories = Category::all();
+        dd($categories);
+        return view('category.index')->with('categories', $categories);
+    }
 }
