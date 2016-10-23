@@ -14,7 +14,7 @@
     <div class="left">
         <ul class="nav">
             <li><a href="{{url('/user/allArticle')}}">Articles List</a></li>
-            <li><a href="#">Articles List</a></li>
+            <li><a href="{{url('/user/allCategory')}}">Categories List</a></li>
             <li><a href="#">Articles List</a></li>
             <li><a href="#">Articles List</a></li>
             <li><a href="#">Articles List</a></li>

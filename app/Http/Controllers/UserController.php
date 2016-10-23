@@ -4,12 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Category;
-use App\Models\User;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
-use DB;
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -70,20 +67,39 @@ class UserController extends Controller
 
     public function createCategory()
     {
-        return view('category.create');
+        $categories = Category::all();
+        return view('category.create')->with('categories', $categories);
     }
 
     public function handleCreateCategory(Request $request)
     {
-        $data['pid'] = $request->get('pid');
-        $data['name'] = $request->get('name');
-        dd(Category::create($data));
+        $input = array_map('trim', $request->input());
+        $cate = new Category();
+        $cate->name = $input['name'];
+        $cate->pid = $input['pid'];
+        $nameExist = Category::where('name', $input['name'])->count();
+        $pidExist = Category::find($input['pid']);
+        if($nameExist) {
+            return back()->withInput()->withErrors('category name exist');
+        }
+        if(!$pidExist) {
+            return back()->withInput()->withErrors('category id is not exist');
+        }
+        if($cate->save()) {
+            return Redirect::to('user/allCategory');
+        }
+
     }
 
     public function allCategory()
     {
         $categories = Category::all();
-        dd($categories);
+        $c_array = $categories->toArray();
+        $categories = array_map(function($c) {
+            $cate = Category::find($c['pid']);
+            $c['pname'] = $cate['name'] ? : 'primary category';
+            return $c;
+        }, $c_array);
         return view('category.index')->with('categories', $categories);
     }
 }
