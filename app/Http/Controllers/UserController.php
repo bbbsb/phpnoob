@@ -23,7 +23,7 @@ class UserController extends Controller
 
     public function createArticle()
     {
-        return view('user.createArticle');
+        return view('article.create');
     }
 
     public function handleCreateArticle(Request $request)
@@ -54,8 +54,8 @@ class UserController extends Controller
 
     public function allArticle()
     {
-        $articles = Article::paginate(2);
-        return view('user.article', [
+        $articles = Article::orderBy('id', 'DESC')->paginate(2);
+        return view('article.index', [
             'articles' => $articles,
         ]);
     }
@@ -101,5 +101,10 @@ class UserController extends Controller
             return $c;
         }, $c_array);
         return view('category.index')->with('categories', $categories);
+    }
+
+    public function tags()
+    {
+
     }
 }
