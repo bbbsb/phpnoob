@@ -36,7 +36,7 @@
                     <div class="alert alert-danger">
                         @foreach ($errors->all() as $error)
                            <button class="close" type="button" data-dismiss="alert">&times;</button>
-                           {{$error}}
+                           <i>{{$error}}</i>
                         @endforeach
                     </div>
                 @endif

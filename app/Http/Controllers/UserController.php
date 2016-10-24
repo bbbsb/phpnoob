@@ -82,7 +82,7 @@ class UserController extends Controller
         if($nameExist) {
             return back()->withInput()->withErrors('category name exist');
         }
-        if(!$pidExist) {
+        if(!$pidExist && $input['pid']) {
             return back()->withInput()->withErrors('category id is not exist');
         }
         if($cate->save()) {
