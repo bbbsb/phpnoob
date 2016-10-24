@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index');
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', 'Auth\AuthController@getLogout');
@@ -77,3 +75,7 @@ Route::get('user/response', function(){
 Route::get('user/download', function(){
     return response()->download(realpath(public_path('images').'/asp.png'), 'my.png');
 });
+
+
+//learn
+Route::get('learn/{name}', 'LearnController@show');
