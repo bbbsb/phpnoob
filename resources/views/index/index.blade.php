@@ -101,27 +101,27 @@
             <div class="codelist codelist-desktop cate1">
                 <h2><i class="fa fa-list"></i> HTML / CSS</h2>
                 <a class="item-top item-1" href="http://www.runoob.com/html/html-tutorial.html"><h4>【学习 HTML】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/html.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/html.png')}}>
                     <strong>HTML，即超文本标记语言（Hyper Text Markup Language）</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/html/html5-intro.html"><h4>【学习 HTML5】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/html5.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/html5.png')}}>
                     <strong>HTML5 是下一代 HTML 标准</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/css/css-tutorial.html"><h4>【学习 CSS】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/css.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/css.png')}}>
                     <strong>层叠样式表（Cascading StyleSheet）</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/css3/css3-tutorial.html"><h4>【学习 CSS3】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/css3.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/css3.png')}}>
                     <strong>CSS3是CSS技术的升级版本</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html"><h4>【学习 Bootstrap】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/bootstrap.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/bootstrap.png')}}>
                     <strong>Bootstrap，来自 Twitter，是目前最受欢迎的前端框架</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/foundation/foundation-tutorial.html"><h4>【学习 Foundation】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/foundation.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/foundation.png')}}>
                     <strong>Foundation 用于开发响应式的 HTML, CSS and JavaScript 框架</strong></a>
             </div>
             <div class="codelist codelist-desktop cate2">
@@ -130,70 +130,70 @@
 
 
                 <a class="item-top item-1" href="http://www.runoob.com/js/js-tutorial.html"><h4>【学习 JavaScript】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/js.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/js.png')}}>
                     <strong>JavaScript 是 Web 的编程语言</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/htmldom/htmldom-tutorial.html"><h4>【学习 HTML DOM】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/htmldom.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/htmldom.png')}}>
                     <strong>HTML DOM 定义了访问和操作 HTML 文档的标准方法</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/jquery/jquery-tutorial.html"><h4>【学习 jQuery】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/jquery.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/jquery.png')}}>
                     <strong>jQuery 是一个 JavaScript 库</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/angularjs/angularjs-tutorial.html"><h4>【学习 AngularJS】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/angularjs.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/angularjs.png')}}>
                     <strong>AngularJS 通过新的属性和表达式扩展了 HTML</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/react/react-tutorial.html"><h4>【学习 React】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/react.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/react.png')}}>
                     <strong>React 是一个用于构建用户界面的 JAVASCRIPT 库</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html"><h4>【学习 jQuery UI】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/jqueryui.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/jqueryui.png')}}>
                     <strong>jQuery UI 是建立在 jQuery上的一组用户界面交互、特效、小部件及主题</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/jeasyui/jqueryeasyui-tutorial.html"><h4>【学习 jQuery EasyUI 】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/jeasyui.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/jeasyui.png')}}>
                     <strong>jQuery EasyUI 是一个基于 jQuery 的框架，集成了各种用户界面插件</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/nodejs/nodejs-tutorial.html"><h4>【学习 Node.js】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/nodejs.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/nodejs.png')}}>
                     <strong>Node.js 是运行在服务端的 JavaScript</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/ajax/ajax-tutorial.html"><h4>【学习 AJAX】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/ajax.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/ajax.png')}}>
                     <strong>AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/json/json-tutorial.html"><h4>【学习 JSON】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/json.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/json.png')}}>
                     <strong>JSON 是存储和交换文本信息的语法</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/highcharts/highcharts-tutorial.html"><h4>【学习 Highcharts】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/highcharts.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/highcharts.png')}}>
                     <strong>Highcharts 是一个用纯JavaScript编写的一个图表库</strong></a>
 
             </div>
             <div class="codelist codelist-desktop cate3">
                 <h2><i class="fa fa-list"></i> 服务端</h2>
-                <a class="item-top item-1" href="./php.html"><h4>【学习 PHP】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/pl.png">
+                <a class="item-top item-1" href="{{url('learn/php')}}"><h4>【学习 PHP】</h4>
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/pl.png')}}>
                     <strong>PHP 是一种通用开源脚本语言</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/linux/linux-tutorial.html"><h4>【学习 Linux】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/linux.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/linux.png')}}>
                     <strong>Linux是一套免费使用和自由传播的类Unix操作系统</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/c/c-tutorial.html"><h4>【学习 C】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/c.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/c.png')}}>
                     <strong>一门通用计算机编程语言</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/design-pattern/design-pattern-tutorial.html"><h4>【设计模式】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/design-pattern.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/design-pattern.png')}}>
                     <strong>设计模式代表了最佳的实践，通常被有经验的面向对象的软件开发人员所采用</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/regexp/regexp-tutorial.html"><h4>【正则表达式】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/regexp.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/regexp.png')}}>
                     <strong>正则表达式是对字符串操作的一种逻辑公式</strong></a>
 
             </div>
@@ -202,19 +202,19 @@
                 <h2><i class="fa fa-list"></i> 数据库</h2>
 
                 <a class="item-top item-1" href="http://www.runoob.com/mysql/mysql-tutorial.html"><h4>【学习 Mysql】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/mysql.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/mysql.png')}}>
                     <strong>MySQL是一个关系型数据库管理系统</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/mongodb/mongodb-tutorial.html"><h4>【学习 MongoDB】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/mongodb.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/mongodb.png')}}>
                     <strong>Mongo DB 是目前在IT行业非常流行的一种非关系型数据库(NoSql)</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/redis/redis-tutorial.html"><h4>【学习 Redis】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/redis.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/redis.png')}}>
                     <strong>一个高性能的key-value数据库</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/Memcached/Memcached-tutorial.html"><h4>【学习 Memcached】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/Memcached.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/Memcached.png')}}>
                     <strong>Memcached是一个自由开源的，高性能，分布式内存对象缓存系统。</strong></a>
             </div>
             <div class="codelist codelist-desktop cate5">
@@ -222,11 +222,11 @@
                 <h2><i class="fa fa-list"></i> 移动端</h2>
 
                 <a class="item-top item-1" href="http://www.runoob.com/jquerymobile/jquerymobile-tutorial.html"><h4>【学习 jQuery Mobile】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/jquerymobile.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/jquerymobile.png')}}>
                     <strong>jQuery Mobile是jQuery 在手机上和平板设备上的版本</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/ionic/ionic-tutorial.html"><h4>【学习 ionic】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/ionic.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/ionic.png')}}>
                     <strong>ionic 是一个强大的 HTML5 应用程序开发框架(HTML5 Hybrid Mobile App Framework )。</strong></a>
             </div>
             <div class="codelist codelist-desktop cate6">
@@ -234,47 +234,47 @@
                 <h2><i class="fa fa-list"></i> XML 教程</h2>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xml/xml-tutorial.html"><h4>【学习 XML】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xml.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xml.png')}}>
                     <strong>XML 被设计用来传输和存储数据</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/dtd/dtd-tutorial.html"><h4>【学习 DTD】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/dtd.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/dtd.png')}}>
                     <strong>DTD（文档类型定义）的作用是定义 XML 文档的合法构建模块</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/dom/dom-tutorial.html"><h4>【学习 XML DOM】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xmldom.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xmldom.png')}}>
                     <strong>XML DOM 定义访问和操作XML文档的标准方法</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xsl/xsl-tutorial.html"><h4>【学习 XSLT】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xslt.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xslt.png')}}>
                     <strong>XSL 是一个 XML 文档的样式表语言，XSLT 指 XSL 转换</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xpath/xpath-tutorial.html"><h4>【学习 XPath】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xpath.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xpath.png')}}>
                     <strong>XPath 是一门在 XML 文档中查找信息的语言</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xquery/xquery-tutorial.html"><h4>【学习 XQuery】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xquery.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xquery.png')}}>
                     <strong>XQuery 被设计用来查询 XML 数据</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xlink/xlink-tutorial.html"><h4>【学习 XLink】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xlink.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xlink.png')}}>
                     <strong>XLink 定义在 XML 文档中创建超级链接的标准方法</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xlink/xlink-tutorial.html"><h4>【学习 XPointer】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xpointer.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xpointer.png')}}>
                     <strong>XPointer是在可扩展标志语言（XML）文件中定位数据的一种语言</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/schema/schema-tutorial.html"><h4>【学习 XML Schema】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/schema.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/schema.png')}}>
                     <strong>XML Schema 描述了 XML文档的结构</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/xslfo/xslfo-tutorial.html"><h4>【学习 XSL-FO】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/xslfo.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/xslfo.png')}}>
                     <strong>XSL-FO 指可扩展样式表语言格式化对象</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/svg/svg-tutorial.html"><h4>【学习 SVG】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/svg.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/svg.png')}}>
                     <strong>SVG 使用 XML 格式定义图像</strong></a>
             </div>
             <div class="codelist codelist-desktop cate8">
@@ -283,23 +283,23 @@
 
 
                 <a class="item-top item-1" href="http://www.runoob.com/webservices/webservices-tutorial.html"><h4>【学习 Web Services】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/webservices.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/webservices.png')}}>
                     <strong>Web Services 脚本平台需支持 XML + HTTP</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/wsdl/wsdl-tutorial.html"><h4>【学习 WSDL】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/wsdl.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/wsdl.png')}}>
                     <strong>WSDL是一门基于 XML 的语言，用于描述 Web Services 以及如何对它们进行访问</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/soap/soap-tutorial.html"><h4>【学习 SOAP】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/soap.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/soap.png')}}>
                     <strong>SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/rss/rss-tutorial.html"><h4>【学习 RSS】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/rss.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/rss.png')}}>
                     <strong>RSS基于XML标准，在互联网上被广泛采用的内容包装和投递协议</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/rdf/rdf-tutorial.html"><h4>【学习 RDF】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/rdf.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/rdf.png')}}>
                     <strong>DF(资源描述框架)是描述网络资源的 W3C 标准</strong></a>
             </div>
             <div class="codelist codelist-desktop cate9">
@@ -307,11 +307,11 @@
                 <h2><i class="fa fa-list"></i> 开发工具</h2>
 
                 <a class="item-top item-1" href="http://www.runoob.com/git/git-tutorial.html"><h4>【学习 Git】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/git.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/git.png')}}>
                     <strong>Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/firebug/firebug-tutorial.html"><h4>【学习 Firebug】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/firebug.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/firebug.png')}}>
                     <strong>Firebug 是一个开源的web开发工具</strong></a>
             </div>
             <div class="codelist codelist-desktop cate10">
@@ -319,31 +319,31 @@
                 <h2><i class="fa fa-list"></i> 网站建设</h2>
 
                 <a class="item-top item-1" href="http://www.runoob.com/http/http-tutorial.html"><h4>【学习 HTTP】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/http.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/http.png')}}>
                     <strong>HTTP协议（HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/web/web-buildingprimer.html"><h4>【网站建设指南】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/webbuildingprimer.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/webbuildingprimer.png')}}>
                     <strong>网站建设指导课程</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/browsers/browser-information.html"><h4>【浏览器信息】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/browsers.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/browsers.png')}}>
                     <strong>对于网站开发人员来说，浏览器信息和统计数据都是非常重要的</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/hosting/hosting-tutorial.html"><h4>【网站主机教程】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/hosting.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/hosting.png')}}>
                     <strong>如果您希望向全世界发布自己的网站，那么您的网站就需要被放置于一个 WEB 服务器</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/tcpip/tcpip-tutorial.html"><h4>【学习 TCP/IP】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/tcpip.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/tcpip.png')}}>
                     <strong>TCP/IP 是因特网的通信协议</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/w3c/w3c-tutorial.html"><h4>【学习 W3C】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/w3c.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/w3c.png')}}>
                     <strong>W3C 让每个人都能在互联网上分享资源</strong></a>
 
                 <a class="item-top item-1" href="http://www.runoob.com/quality/quality-tutorial.html"><h4>【网站品质】</h4>
-                    <img class="codeicon codeicon-36" height="36" width="36" src="./images/quality.png">
+                    <img class="codeicon codeicon-36" height="36" width="36" src={{asset('images/quality.png')}}>
                     <strong>学习如何创建高质量的web网站</strong></a>
             </div>
 
@@ -429,7 +429,7 @@
 
                 <h2><i class="fa fa-list"></i> 服务端</h2>
 
-                <a class="item-top item-1" href="http://www.runoob.com/php/php-tutorial.html">
+                <a class="item-top item-1" href="{{url('learn/php')}}">
                     <h4>PHP</h4>
                 </a>
 
@@ -633,10 +633,6 @@
                 <dd>
                     ·<a href="http://www.runoob.com/xml/xml-examples.html">XML 实例</a>
                 </dd>
-                <dd>
-                    ·<a href="http://www.runoob.com/java/java-examples.html">Java 实例</a>
-                </dd>
-
             </dl>
             <dl>
                 <dt>
@@ -743,19 +739,5 @@
         <div class="panel-body"><img alt="微信关注" width="128" height="128" src="./images/qrcode(1).jpg"></div>
     </div>
 </div>
-<div style="display:none;">
-    <script src="./images/stat.php" language="JavaScript"></script><script src="./images/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5578006" target="_blank" title="站长统计">站长统计</a>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</div>
-<script src="./js/main.js"></script>
-
-
+<script src="{{asset('js/main.js')}}"></script>
 </body></html>
