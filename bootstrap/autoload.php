@@ -2,6 +2,7 @@
 
 define('LARAVEL_START', microtime(true));
 
+require __DIR__.'/../config/const.php';
 /*
 |--------------------------------------------------------------------------
 | Register The Composer Auto Loader
