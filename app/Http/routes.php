@@ -64,6 +64,8 @@ Route::get('user/allCategory', 'UserController@allCategory');
 Route::get('user/createCategory', 'UserController@createCategory');
 Route::post('user/createCategory', 'UserController@handleCreateCategory');
 
+//upload
+Route::post('upload/images', 'UploadController@images');
 
 Route::get('user/response', function(){
     //return (new \Illuminate\Http\Response('Hello World', 200))->header('Content-Type', 'text/html;charset=gb2312');

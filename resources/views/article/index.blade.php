@@ -3,8 +3,8 @@
     <table class="table">
         <tr>
             <td>Title</td>
-            <td>Cover</td>
             <td>Content</td>
+            <td>Cover</td>
             <td>Uid</td>
             <td>Create Time</td>
             <td>Update Time</td>
@@ -14,7 +14,7 @@
         @foreach($articles as $article)
             <tr>
                 <td>{{$article['title']}}</td>
-                <td>{{$article['content']}}</td>
+                <td>{!! $article['content'] !!}</td>
                 <td>{{$article['cover']}}</td>
                 <td>{{$article['uid']}}</td>
                 <td>{{$article['created_at']}}</td>

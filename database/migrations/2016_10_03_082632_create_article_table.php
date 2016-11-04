@@ -14,14 +14,14 @@ class CreateArticleTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('uid');
+            $table->integer('uid')->comment('用户id');
             $table->string('title', 200)->unique();
-            $table->string('tag', 100);
-            $table->integer('type_id');
-            $table->text('content');
-            $table->string('attachment');
-            $table->string('cover');
-            $table->integer('click');
+            $table->string('tag', 100)->comment('标签');
+            $table->integer('cid')->comment('类型id');
+            $table->text('content')->comment('文章内容');
+            $table->string('attachment')->comment('附件');
+            $table->string('cover')->comment('封面链接');
+            $table->integer('click')->comment('点击率');
             $table->timestamps();
         });
     }

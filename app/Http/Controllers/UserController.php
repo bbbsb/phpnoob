@@ -23,20 +23,40 @@ class UserController extends Controller
 
     public function createArticle()
     {
-        return view('article.create');
+        $categories = Category::all();
+        return view('article.create')->with([
+            'categories' => $categories
+        ]);
     }
 
     public function handleCreateArticle(Request $request)
     {
-        $tag = $request->get('tag');
-        $tag = trim($tag);
+        //tag
+        $tag = trim($request->get('tag'));
         $tag = str_replace('/\s+/', ' ', $tag);
+        //category id
+        $cid = trim($request->get('cid'));
+        if(!Category::find($cid)) {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'category id not exist',
+            ]);
+        }
+        //check title
+        if(Article::where('title', trim($request->get('title')))->first()) {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'title exist',
+            ]);
+        }
+        //create new article
         $post = new Article();
         $post->tag = $tag;
         $post->content = trim($request->get('content'));
         $post->title = trim($request->get('title'));
         $post->cover = trim($request->get('cover'));
         $post->uid = $request->user()->id;
+        $post->cid = $cid;
 
         if($post->save()) {
             return response()->json([
