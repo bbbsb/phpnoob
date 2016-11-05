@@ -21,7 +21,7 @@
                 <td>{{$article['updated_at']}}</td>
                 <td>
                     <a href="{{url('/show/'.$article['id'])}}" class="btn btn-default">Detail</a>
-                    <a href="#" class="btn btn-info">Update</a>
+                    <a href="{{url('/user/updateArticle/'.$article['id'])}}" class="btn btn-info">Update</a>
                     <a href="#" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
