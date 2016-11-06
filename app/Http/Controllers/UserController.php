@@ -28,6 +28,16 @@ class UserController extends Controller
             'categories' => $categories
         ]);
     }
+    public function updateArticle($id)
+    {
+        $article = Article::findOrFail($id);
+        $categories = Category::all();
+        return view('article.update', [
+            'article' => $article,
+            'categories' => $categories,
+        ]);
+    }
+
 
     public function handleCreateArticle(Request $request)
     {
@@ -82,6 +92,54 @@ class UserController extends Controller
 
     public function handleDeleteArticle(Request $request)
     {
+
+    }
+
+    public function handleUpdateArticle(Request $request)
+    {
+
+        $id = trim($request->input('id'));
+        $cid = trim($request->input('cid'));
+        $content = trim($request->input('content'));
+        $tag = trim($request->input('tag'));
+        $cover = trim($request->input('cover'));
+        $title = trim($request->input('title'));
+
+
+        $post = Article::find($id);
+
+        if(!$post) {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'article not exist',
+            ]);
+        }
+
+        if(!Category::find($cid)) {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'category id not exist',
+            ]);
+        }
+
+        $post->cid = $cid;
+        $post->content = $content;
+        $post->tag = $tag;
+        $post->cover = $cover;
+        $post->title = $title;
+
+        if($post->save()) {
+            return response()->json([
+                'errcode' => 0,
+                'msg' => 'success',
+            ]);
+        } else {
+            return response()->json([
+                'errcode' => 1,
+                'msg' => 'fail'
+            ]);
+        }
+
 
     }
 

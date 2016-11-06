@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -71,10 +72,6 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update($id)
-    {
-        dd(Article::findOrFail($id));
-    }
 
     /**
      * Remove the specified resource from storage.

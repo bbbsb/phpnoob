@@ -56,7 +56,9 @@ Route::get('user/index', 'UserController@index');
 Route::get('user/createArticle', 'UserController@createArticle');
 Route::post('user/handleCreateArticle', 'UserController@handleCreateArticle');
 Route::get('user/allArticle', 'UserController@allArticle');
-Route::get('user/updateArticle/{id}', 'ArticleController@update');
+Route::get('user/updateArticle/{id}', 'UserController@updateArticle');
+Route::post('user/handleUpdateArticle', 'UserController@handleUpdateArticle');
+
 
 Route::get('show/{id}', 'ArticleController@show');
 
