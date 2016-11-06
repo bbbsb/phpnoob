@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -49,7 +51,11 @@ class LearnController extends Controller
     public function show($name)
     {
         if($name == 'php') {
-            return view('learn.index');
+            $category = Category::where('name', $name)->first();
+            $articles = Article::where('cid', $category->id)->get();
+            return view('learn.index', [
+                'articles' => $articles,
+            ]);
         } else {
             return 'not development';
         }
