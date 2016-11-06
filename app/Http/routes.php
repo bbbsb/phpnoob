@@ -59,7 +59,8 @@ Route::get('user/allArticle', 'UserController@allArticle');
 Route::get('user/updateArticle/{id}', 'UserController@updateArticle');
 Route::post('user/handleUpdateArticle', 'UserController@handleUpdateArticle');
 
-
+//Route::get('learn/{name}', 'LearnController@show');
+Route::get('learn/{name}/{id}', 'LearnController@show');
 Route::get('show/{id}', 'ArticleController@show');
 
 //category

@@ -48,16 +48,21 @@ class LearnController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($name)
+    public function show($name, $id)
     {
-        if($name == 'php') {
-            $category = Category::where('name', $name)->first();
-            $articles = Article::where('cid', $category->id)->get();
-            return view('learn.index', [
-                'articles' => $articles,
-            ]);
-        } else {
-            return 'not development';
+        switch($name) {
+            case 'php':
+                $category = Category::where('name', $name)->first();
+                $titles = Article::where('cid', $category->id)->get();
+                $article = Article::where('cid', $category->id)->find($id);
+                return view('learn.php', [
+                    'article' => $article,
+                    'titles' => $titles,
+                ]);
+                break;
+
+            default:
+                return 'not development';
         }
     }
 
