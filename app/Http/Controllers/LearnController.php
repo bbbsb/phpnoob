@@ -55,6 +55,9 @@ class LearnController extends Controller
                 $category = Category::where('name', $name)->first();
                 $titles = Article::where('cid', $category->id)->get();
                 $article = Article::where('cid', $category->id)->find($id);
+                $cateTree = (new Category())->tree();
+                dd($cateTree);
+
                 return view('learn.php', [
                     'article' => $article,
                     'titles' => $titles,

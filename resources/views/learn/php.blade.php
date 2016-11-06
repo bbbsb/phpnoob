@@ -13,9 +13,6 @@
     <script src="{{asset('js/push.js')}}"></script>
     <script src="{{asset('js/hm.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('thirdparty/syntaxhighlighter/shCore.js')}}"></script>
-    <script src="{{asset('thirdparty/syntaxhighlighter/shBrushPhp.js')}}"></script>
-    <script src="{{asset('thirdparty/syntaxhighlighter/shBrushXml.js')}}"></script>
 
     <!--[if lt IE 9]>
     <script src="{{asset('js/html5shiv.min.js')}}"></script>
@@ -232,7 +229,7 @@
                     </div>
                 </div>
                 <div class="share">
-                    <img width="150" height="150" src="./images/qrcode.jpg">
+                    <img width="150" height="150" src="{{asset('images/qrcode.jpg')}}">
                 </div>
             </div>
         </div>
@@ -249,9 +246,13 @@
     <!-- qrcode modal -->
     <div id="bottom-qrcode" class="modal panel-modal hide fade in" style="display: none;">
         <h4>微信关注</h4>
-        <div class="panel-body"><img alt="微信关注" width="128" height="128" src="./images/qrcode(1).jpg"></div>
+        <div class="panel-body"><img alt="微信关注" width="128" height="128" src="{{asset('images/qrcode(1).jpg')}}"></div>
     </div>
     </div>
+
+    <script src="{{asset('thirdparty/syntaxhighlighter/shCore.js')}}"></script>
+    <script src="{{asset('thirdparty/syntaxhighlighter/shBrushPhp.js')}}"></script>
+    <script src="{{asset('thirdparty/syntaxhighlighter/shBrushXml.js')}}"></script>
     <script>
         SyntaxHighlighter.all();
     </script>
