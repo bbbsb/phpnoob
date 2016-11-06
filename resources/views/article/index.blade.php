@@ -6,6 +6,7 @@
             <td>Content</td>
             <td>Cover</td>
             <td>Uid</td>
+            <td>Category id</td>
             <td>Create Time</td>
             <td>Update Time</td>
             <td>Action</td>
@@ -17,6 +18,7 @@
                 <td>{!! $article['content'] !!}</td>
                 <td>{{$article['cover']}}</td>
                 <td>{{$article['uid']}}</td>
+                <td>{{$article['cid']}}</td>
                 <td>{{$article['created_at']}}</td>
                 <td>{{$article['updated_at']}}</td>
                 <td>
