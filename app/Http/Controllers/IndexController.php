@@ -16,7 +16,8 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index.index');
+        return 'phpnoob.com';
+        //return view('index.index');
     }
 
     /**
